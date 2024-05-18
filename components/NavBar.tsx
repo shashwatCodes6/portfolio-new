@@ -4,11 +4,12 @@ import Link from "next/link"
 
 export default function NavBar(){
     return( 
-        <div className="flex justify-between pd-2 m-4">
-            <div className="text text-3xl font-bold m-2">
+        <div className= " bg-slate-300">
+        <div className="flex justify-between my-0 m-5 pd-2">
+            <div className="text text-3xl font-bold m-5">
                 Shashwat
             </div>
-            <div className="m-1 hidden md:block">
+            <div className="m-4 hidden md:block">
                 <Button size="lg" variant="ghost">
                     <Link href="/login">Projects</Link>
                 </Button>
@@ -16,6 +17,7 @@ export default function NavBar(){
                     <Link href="/login">Acheivements</Link>
                 </Button>
             </div>
+        </div>
         </div>
     )
 }
