@@ -26,7 +26,7 @@ export default function Acheivements(){
           {
             achievements.map((key, _) => {
               return (
-                <Card className="col-span-1 m-5 bg-slate-500">
+                <Card key = {_} className="col-span-1 m-5 bg-slate-500">
                   <CardHeader>
                     <CardTitle className="underline">{key.title}</CardTitle>
                   </CardHeader>
